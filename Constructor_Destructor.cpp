@@ -1,0 +1,1 @@
+// Multiple constructor is possible , but only one destructor is possible in a class .
