@@ -1,31 +1,6 @@
 #include <iostream>
 #include <string>
 using namespace std;
-class Color {
-private:
-	short R, G, B;
-protected:
-	Color()
-	{
-		R = G = B = 0;
-	}
-	Color(short R, short G, short B)
-	{
-		this->R = R;
-		this->G = G;
-		this->B = B;
-	}
-	~Color()
-	{
-		cout << "Discolored" << endl;
-	}
-
-public:
-	void PrintColor()
-	{
-		cout << "R : " << R << " G : " << G << " B : " << B << endl;
-	}
-};
 
 class Animal {
 private:
@@ -51,7 +26,8 @@ protected:
 	}
 };
 
-
+// When deriving a class, default access specifier is private.
+// class Dog: Animal{} is equivalent to class Dog: private Animal{}
 class Dog: public Animal {
 private:
 	string name;
@@ -67,6 +43,32 @@ public:
 	~Dog() 
 	{
 		cout<<this->name<<" ";
+	}
+};
+
+class Color {
+private:
+	short R, G, B;
+protected:
+	Color()
+	{
+		R = G = B = 0;
+	}
+	Color(short R, short G, short B)
+	{
+		this->R = R;
+		this->G = G;
+		this->B = B;
+	}
+	~Color()
+	{
+		cout << "Discolored" << endl;
+	}
+
+public:
+	void PrintColor()
+	{
+		cout << "R : " << R << " G : " << G << " B : " << B << endl;
 	}
 };
 
