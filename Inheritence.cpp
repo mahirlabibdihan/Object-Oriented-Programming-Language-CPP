@@ -98,6 +98,32 @@ public:
 };
 
 
+class base{
+public:
+	base(int a)
+	{
+
+	}
+};
+
+class derived:public base{
+public:
+	// When derived class construtor is called , Base class constructor is also called by default
+	// derived(int a)
+	// {
+
+	// }
+	// It means 
+	// derived(int a):base()		// It will give error if there is no base()
+	// {
+		
+	// }
+	derived(int a):base(a)
+	{
+
+	}
+};
+
 int main()
 {
 	Dog Tom("Tom",500,100);
