@@ -9,7 +9,7 @@ template<typename T>
 class Vector
 {
 private:
-    T* arr = NULL;
+    T* arr;
     int Total_Capacity;
     int Current_Size;
 public:

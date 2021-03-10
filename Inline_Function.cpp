@@ -1,7 +1,7 @@
 // Functions that are not actually called but, rather, are expanded in line, at the point of each call
 // Faster than function
 
-
+// Inline function must be declared and defined in single file .
 #include <iostream>
 using namespace std;
 

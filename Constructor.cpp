@@ -1,0 +1,82 @@
+#include <iostream>
+#include <string>
+using namespace std;
+
+// Constructor should be used for initialization . ( Good practice )
+class Animal {
+private:	
+	int height;
+	int weight;
+	// Constructor can't be declared private / protected . As objects can't access this while instantiation .
+public:
+	// Public function member
+	// Same name as class
+	// No return type . ( But return statement can be used )
+	// void Animal() ; // Invalid
+
+
+	// Called when no argumet is passed at object creation .
+	Animal()
+	{
+		this->height = 0;
+		this->weight = 0;
+		cout<<"Created"<<endl;
+		return;
+	}
+
+	// Constructor can be overloaded . Multiple constructor is possible .
+	Animal(int height, int width)
+	{
+		this->height = height;
+		this->weight = weight;
+		cout<<"Created"<<endl;
+	}
+
+	/* 
+	Default Constructor :
+	A constructor with no parameter . Class_Name(); 
+	It is supplied by the compiler if no constructor is defined by the programmer .Thus ee can create an object without any argument without defining any constructor .
+	What this constructor do? 
+	Does not initialize the member variables to any default value . Contain garbage value after creation .
+	As soon as a constructor is defined by the programmer , the compiler will no longer use this default constructor . There will be no existence of this default constructor . After this if we don't define a constructor with no parameter , we can't create an object with no argument . As compiler has forgot the default construtor .
+	*/
+
+	/* 
+	If we just define Animal(int height, int width); without defining Animal() , then "Animal a(10,20);"is valid , but "Animal a;" is invalid . For this we also need to define Animal() .
+	But if we don't define any constructor , then "Animal a(10,20);" is invalid , but "Animal a;" is valid .
+	*/
+
+};
+
+class Dog: public Animal {
+private:
+	string name;
+public:
+	// Constructor of base class can be called like this ,  to avoid extra code .
+	Dog(string name, int height, int width): Animal(height, width)
+	{
+		this->name = name;
+	}
+	Dog(): Animal()
+	{
+		this->name = "";
+	}
+};
+
+int main()
+{
+	// Constructor is automatically called when a object is created ( Not a pointer ).
+	Animal  a;	// Constructor is automatically called
+
+	Animal* b;	// Constructor not called 
+
+	// Constructor is also called when we use dynamic memory allocation . (Valid for new , Not for malloc )
+	b=new Animal;	// Constructor is called
+
+	// We don't need to use () for declaring object without any argument . If we use , then no object will be created .
+	Animal c(); 
+	// No object is created here . Because compiler thinks it as a function declaration with name c and return type Animal .
+
+	// But this will work .
+	b=new Animal();	  // Object is createdc 
+}
