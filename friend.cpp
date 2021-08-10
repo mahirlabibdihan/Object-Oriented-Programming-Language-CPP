@@ -1,0 +1,1 @@
+// friend function of a class can access the private variables of that class . Doesn't have a this pointer . 

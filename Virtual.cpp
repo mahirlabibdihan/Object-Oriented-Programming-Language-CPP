@@ -23,7 +23,7 @@ protected:
 	}
 public:
 	virtual void Details()
-	{
+	{no
 		cout<<"Height : "<<height<<"  Weight : "<<weight<<endl;
 	}
 };

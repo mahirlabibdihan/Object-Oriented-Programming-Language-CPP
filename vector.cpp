@@ -6,7 +6,7 @@ using namespace std;
 
 
 template<typename T>
-class Vector
+class Vector//:public vector<T>
 {
 private:
     T* arr;

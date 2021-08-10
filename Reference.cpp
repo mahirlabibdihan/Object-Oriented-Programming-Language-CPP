@@ -29,6 +29,7 @@ int main()
 	int x=10;
 	int& ref=x;    // Reference must be initialized when declared .// Not applicable for class member
 			       // Non new memory is allocated for reference
+	const int& ref2=10;
 
 	// void& ref=x;	// Can't be declared as void
 

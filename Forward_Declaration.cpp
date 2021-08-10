@@ -7,3 +7,27 @@
 // Forward Declaration of inline Function : Compiler will look for the definition of that function in the same file .
 
 // Forward Declaration of Variabel : Compiler will look for the definition of that variable in all the files in the program .
+#include<iostream>
+using namespace std;
+
+class Animal;
+Animal* createAnimal();
+
+int main()
+{
+	Animal *a=createAnimal();
+}
+
+class Animal
+{
+public:
+	Animal()
+	{
+		cout<<"Animal Created"<<endl;
+	}
+};
+
+Animal* createAnimal()
+{
+	return new Animal;
+}

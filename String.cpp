@@ -1,7 +1,9 @@
 #include<iostream>
 #include<cstring>
+#include<string>
 using namespace std;
-class String {
+class String // :public string 
+{
 	char *s;
 	int currentLength;
 public:
@@ -39,6 +41,13 @@ public:
 	void out()
 	{
 		puts(s);
+	}
+	void resize(int n)
+	{
+		char* temp = new char[n];
+		strcpy(temp, s);
+		delete[] s;
+		s = temp;
 	}
 	void push_back(char c)
 	{
@@ -178,7 +187,20 @@ public:
 	}
 	friend String operator+(char c, String str);
 	friend String operator+(const char* c, String str);
+	friend istream& operator>>(istream& in,String str);
+	friend ostream& operator<<(ostream& out,String str);
 };
+
+istream& operator>>(istream& in,String str)
+{
+	scanf("%s",str);
+	return in;
+}
+ostream& operator<<(ostream& out,String str)
+{
+	printf("%s\n",str);
+	return out;
+}
 
 String operator+(char c, String str)
 {
