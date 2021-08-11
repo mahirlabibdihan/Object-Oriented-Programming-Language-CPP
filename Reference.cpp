@@ -1,3 +1,31 @@
+/*
+ ______   _________ _      _       _
+|  ____ \|___   ___| |    | |     | |
+| |    \ \   | |   | |____| |     | |
+| |    | |   | |   |  ____  |     | |
+| |____/ /___| |___| |    | |_____| |
+|_______/|_________|_|    |_________|
+M A H I R     L A B I B     D I H A N
+
+*/
+
+// Alternative to copy constructor
+/*
+	We can use reference to avoid copy constructor. We know copy constructor is called when:
+	1. An object is returned by value from a function.
+	ALternativly we can return object by reference. There are two cases.
+	We may return local or global object. ( Not applicable for local object )
+	For local object we can't return by reference. But that's not a issue at all.
+	Because we know copy constructor is not called when we return local object by value.
+	So we can just return reference of global objects.
+
+	2. When an object is passed by value to a function. 
+	We can easily pass objects by reference to a 
+
+	3. When an object is constructed based on another object of the same class.
+	We can't replace this with reference. 
+	We have to use copy constructor here when there are dynamic allocations in the object.
+*/
 #include<stdio.h>
 #include<vector>
 #include<iostream>

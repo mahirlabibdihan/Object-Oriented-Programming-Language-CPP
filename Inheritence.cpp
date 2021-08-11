@@ -1,3 +1,10 @@
+/*
+ Classes can reuse code from other classes. Relationships and subclasses between objects can be assigned, enabling developers to reuse common logic while still maintaining a unique hierarchy. This property of OOP forces a more thorough data analysis, reduces development time and ensures a higher level of accuracy.
+
+
+ reusability
+ eliminate redundant code
+*/
 #include <iostream>
 #include <string>
 using namespace std;

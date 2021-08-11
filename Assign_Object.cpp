@@ -1,3 +1,14 @@
+/*
+ ______   _________ _      _       _
+|  ____ \|___   ___| |    | |     | |
+| |    \ \   | |   | |____| |     | |
+| |    | |   | |   |  ____  |     | |
+| |____/ /___| |___| |    | |_____| |
+|_______/|_________|_|    |_________|
+M A H I R     L A B I B     D I H A N
+
+*/
+
 // One object can be assigned to another provided that both objects are of the same type
 // By default, when one object is assigned to another, a bitwise copy of all the data members is made, including compound data structures like arrays
 // Creates problem when member variables point to dynamically allocated memory and destructors are used to free that memory
@@ -9,7 +20,7 @@ class Point{
 	float x, y;
 
 	// Valid
-	Point& operator=(Point A)
+	Point& operator=(Point& A)
 	{
 		this->x = A.x;
 		this->y = A.y;
@@ -17,19 +28,19 @@ class Point{
 	}
 
 	// Invalid
-	static Point& operator=(Point& p,Object o)
+	static Point& operator=(Point& A,Point& B)
 	{
-		this->x = A.x;
-		this->y = A.y;
-		return *this;
+		A.x = B.x;
+		A.y = B.y;
+		return A ;
 	}
 
 	// Invalid
-	friend Point& operator=(Point& p,Object o);
+	friend Point& operator=(Point& A,Point& B);
 };
 
 // Invalid
-Point& operator=(Point& p,Object o)
+Point& operator=(Point& p,Point B)
 {
 
 }

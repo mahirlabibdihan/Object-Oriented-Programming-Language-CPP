@@ -76,7 +76,7 @@ int main()
 	// We don't need to use () for declaring object without any argument . If we use , then no object will be created .
 	Animal c(); 
 	// No object is created here . Because compiler thinks it as a function declaration with name c and return type Animal .
+	Animal c = Animal(); // But this will work .
 
-	// But this will work .
-	b=new Animal();	  // Object is createdc 
+	b=new Animal();	  // Object is created
 }
