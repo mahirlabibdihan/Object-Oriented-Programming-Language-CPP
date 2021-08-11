@@ -18,9 +18,11 @@ void swap(int& a,int& b)  // New copy of variables is not created in function pa
 }
 
 int R;
-
+// We can't return reference to local variable from a function
 int& Reference()
 {
+	// int x;
+	// return x;	// invalid
 	return R;
 }
 int main()
@@ -28,7 +30,7 @@ int main()
 	// When a variable is declared as a reference, it becomes an alternative name for an existing variable.
 	int x=10;
 	int& ref=x;    // Reference must be initialized when declared .// Not applicable for class member
-			       // Non new memory is allocated for reference
+			       // No new memory is allocated for reference
 	const int& ref2=10;
 
 	// void& ref=x;	// Can't be declared as void
@@ -63,7 +65,4 @@ int main()
 
 
 	Reference()=a;
-	
-
-
 }

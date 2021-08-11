@@ -12,18 +12,12 @@
 // New Lines ('\n') will be translated to '\n' only
 // '\n' -> Line feed -> 0a
 
-/*										Read						Write
-	Text file + Text Mode 		-> '\r\n' -> '\n'				'\n'  -> '\r\n'
-								-> '\n'	  -> '\n'				'\r'  -> '\r'
-																endl  -> '\r\n'
+/*							Read						Write
+	Text Mode 		-> 	'\r\n' 	-> '\n'				'\n'  -> '\r\n'
+					-> 	'\n'	-> '\n'				'\r'  -> '\r'
+													endl  -> '\r\n'
 
-	Text file + Binary Mode 	-> '\r\n' -> '\r' '\n'			'\n'  -> '\n'
-								   '\r'   -> '\r'				'\r'  -> '\r'
-								   '\n'   -> '\n'				endl  -> '\n'
-
- 	Binary file + Text Mode 	-> '\n'   -> '\n'				'\n'   -> '\n'
- 								   '\r'   -> '\r'				'\r'   -> '\r'
-
-	Binary file + Binary Mode	-> '\n'   -> '\n'				'\n'   -> '\n'
-								   '\r'   -> '\r'				'\r'   -> '\r'
+	Binary Mode 	-> 	'\r\n' -> '\r' '\n'			'\n'  -> '\n'
+						'\r'   -> '\r'				'\r'  -> '\r'
+						'\n'   -> '\n'				endl  -> '\n'
 */

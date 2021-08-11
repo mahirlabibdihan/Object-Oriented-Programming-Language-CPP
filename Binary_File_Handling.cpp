@@ -1,3 +1,13 @@
+/*
+ ______   _________ _      _       _
+|  ____ \|___   ___| |    | |     | |
+| |    \ \   | |   | |____| |     | |
+| |    | |   | |   |  ____  |     | |
+| |____/ /___| |___| |    | |_____| |
+|_______/|_________|_|    |_________|
+M A H I R     L A B I B     D I H A N
+
+*/
 
 #include <fstream>
 #include <iostream>
@@ -5,40 +15,39 @@
 using namespace std;
 
 
-// istream &get(char& ch)vie
-
 int main(){
-	ofstream ob("Binary.txt",ios::out|ios::binary|ios::trunc);
-	int n=12345;
-	ob.write((char *)(&n),2);	// Writing integer
-	ob.write("12345",6);	// Writing string
+
+	// ostream::write will always write into file in hexadecimal form whether we open the file ase binary mode or not.
+	// The only difference with binary and text mode is,
+	// In binary mode '\n' will be written as '\n' , but in text mode '\n' will be written as '\r\n'
+	ofstream ob("Binary.txt",ios::out|ios::binary);
+	int id=1905072;
+	char* name="Mahir Labib Dihan";
+
+	ob.write((char*)&id,sizeof(int));
+	ob.write((char*)name,strlen(name)+1);
+
 	ob.close();
 
+	ifstream ib("Binary.txt",ios::in|ios::binary);
+	int id2;
+	char name2[30];
 
-	// char ch;
+	ib.seekg(0,ios::beg);
+	ib.read((char*)&id2,sizeof(int));
+	ib.read(name2,20*sizeof(char));		
+	// istream &read(char *buf, streamsize num)
+	// Reads num number of bytes from the stream and puts them in buf
+	// ib.gcount() = How many bytes have read in last istream::read() function. By using this, we can find out if num number of bytes is successfully read or not.
 
-	// char str[10];
-	// ifstream ib("Binary.txt",ios::in|ios::binary);
-
-	// while(!ib.eof())
-	// {
-	// 	ib.read(str,7);
-	// 	cout<<str<<endl;
-	// 	for(int i=0;i<7;i++){
-	// 		cout<<str[i];
-	// 	}
-	// 	cout<<endl;
-	// 	memset(str,'\0',sizeof str);
-	// }
-	// // while(true)
-	// // {
-	// // 	ib.get(ch);
-	// // 	if(ib.eof()) break;		// Get set eof on failure
-	// // 	cout<<ch<<endl;
-	// // }	
-	// ib.close();
+	cout<<id2<<" "<<name2;
 
 
+	// We can also read the whole file at once by getting file size
+	// Get file size
+	// ib.seekg(0,ios::end);
+	// int sz=ib.tellg();
 
-	// We should not
+	// ib.seekg(0,ios::beg);
+	// ib.read(name2,sz);	
 }

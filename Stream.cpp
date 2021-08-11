@@ -1,0 +1,1 @@
+// Streams must be passed to function and return from function as reference

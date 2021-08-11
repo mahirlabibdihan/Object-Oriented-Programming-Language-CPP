@@ -1,9 +1,3 @@
-// In C++, a Copy Constructor may be called in the following cases: 
-// 1. When an object of the class is returned by value. 
-// 2. When an object of the class is passed (to a function) by value as an argument. 
-// 3. When an object is constructed based on another object of the same class. 
-// 4. When the compiler generates a temporary object.
-
 /*
  ______   _________ _      _       _
 |  ____ \|___   ___| |    | |     | |
@@ -14,6 +8,13 @@
 M A H I R     L A B I B     D I H A N
 
 */
+
+// In C++, a Copy Constructor may be called in the following cases: 
+// 1. When an object of the class is returned by value. ( Not applicable for local object of function. For details: NRVO (Named Return Value Optimization) )
+// 2. When an object of the class is passed (to a function) by value as an argument. 
+// 3. When an object is constructed based on another object of the same class. 
+// 4. When the compiler generates a temporary object.
+
 
 #include <iostream>
 #include <cstring>
