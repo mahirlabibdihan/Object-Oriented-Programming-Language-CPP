@@ -29,6 +29,8 @@ public:
 	}
 };
 
+// Virtual static member function is not allowed
+
 
 // To ensure that the storage for a static member is allocated it has to be defined second time outside the class using the class-name and scope operator
 int Animal::Count=0;

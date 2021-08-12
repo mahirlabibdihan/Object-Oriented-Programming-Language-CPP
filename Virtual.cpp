@@ -15,6 +15,10 @@ using namespace std;
 // Pointer of parent class can point to child class .
 // Pointer of child class can't point to parent class .
 
+
+// Virtual static member function is not allowed
+
+
 // Constructors cannot be virtual, but destructors can be virtual
 // It ensures that the derived class destructor is called when a base class pointer is used while deleting a dynamically created derived class object
 

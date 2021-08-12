@@ -1,3 +1,16 @@
+/*
+ ______   _________ _      _       _
+|  ____ \|___   ___| |    | |     | |
+| |    \ \   | |   | |____| |     | |
+| |    | |   | |   |  ____  |     | |
+| |____/ /___| |___| |    | |_____| |
+|_______/|_________|_|    |_________|
+M A H I R     L A B I B     D I H A N
+
+*/
+
+#include <iostream>
+using namespace std;
 class Object{
 };
 
@@ -32,6 +45,9 @@ int main()
 	obj = new Object;	// Needs class definition .
 	// Array
 	int *x = new int[100];
-	// Array created with new can't be initialized . Default constructor will ba called .
+	// Array created with new can't be initialized . Default constructor will be called .
+
+	// Possible in C++11
+	// int *x = new int[100]{1,2,3};
 	delete[] x;
 }

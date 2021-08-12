@@ -10,12 +10,40 @@ M A H I R     L A B I B     D I H A N
 */
 
 // In C++, a Copy Constructor may be called in the following cases: 
-// 1. When an object of the class is returned by value. ( Not applicable for local object of function. For details: NRVO (Named Return Value Optimization) )
+// 1. When an object of the class is returned by value. 
+// ( Not applicable for local object of function. For details: NRVO (Named Return Value Optimization) . This is fully depends on compiler. If we make our copy constructor private we can't return local object anyway.)
 // 2. When an object of the class is passed (to a function) by value as an argument. 
 // 3. When an object is constructed based on another object of the same class. 
 // 4. When the compiler generates a temporary object.
 
+// It is, however, not guaranteed that a copy constructor will be called in all these cases, because the C++ Standard allows the compiler to optimize the copy away in certain cases, one example is the return value optimization (sometimes referred to as RVO). [ See case 1 ]
 
+
+// If we don’t define our own copy constructor, the C++ compiler creates a default copy constructor for each class which does a bit-wise copy between objects. 
+
+// The default copy constructor does only shallow copy. 
+// Deep copy is possible only with user defined copy constructor. 
+/*
+Why argument to a copy constructor must be passed as a reference? 
+- A copy constructor is called when an object is passed by value. Copy constructor itself is a function. So if we pass an argument by value in a copy constructor, a call to copy constructor would be made to call copy constructor which becomes a non-terminating chain of calls. Therefore compiler doesn’t allow parameters to be passed by value.
+*/
+
+/*
+Why copy constructor argument should be const in C++?
+- One reason for passing const reference is, we should use const in C++ wherever possible so that objects are not accidentally modified. 
+*/
+
+/*
+Can we make copy constructor private? 
+Yes, a copy constructor can be made private. When we make a copy constructor private in a class, objects of that class become non-copyable. This is particularly useful when our class has pointers or dynamically allocated resources. In such situations, we can either write our own copy constructor like above String example or make a private copy constructor so that users get compiler errors rather than surprises at runtime. 
+
+If we don't want to use copy constructor accidentally we can make it private to get compile error.
+Or if we want to check where copy constructor is being used at compile time we can make it private.
+Like when we return a local object from a function it doesn't call copy constructor at run time.
+But if we make our copy constructor private it will give compilation error. As it is calling copy constructor at compile time.
+But to optimize copy, compiler doesn't call copy constructor at run time. That doesn't mean we can make our copy constructor private.
+If we don't write copy constructor that will be fine.
+*/
 #include <iostream>
 #include <cstring>
 using namespace std;
@@ -35,6 +63,9 @@ public:
 		width = new int(*a.width);
 		height = new int(*a.height);
 	}
+	// Usually copy constructors takes only one argument(Reference to the object which needs to be copied ).
+	// But it is possible to create copy constructors that take additional arguments, as long as the additional arguments have default values
+	// Animal(const Animal &a,int x=0) { }
 	~Animal()
 	{
 		cout<<"Destructor"<<endl;

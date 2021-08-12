@@ -5,6 +5,9 @@
  reusability
  eliminate redundant code
 */
+
+// Multiple inheritence
+// Miltilevel inheritence
 #include <iostream>
 #include <string>
 using namespace std;

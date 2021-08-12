@@ -35,7 +35,7 @@ public:
 	/* 
 	Default Constructor :
 	A constructor with no parameter . Class_Name(); 
-	It is supplied by the compiler if no constructor is defined by the programmer .Thus ee can create an object without any argument without defining any constructor .
+	It is supplied by the compiler if no constructor is defined by the programmer .Thus we can create an object without any argument without defining any constructor .
 	What this constructor do? 
 	Does not initialize the member variables to any default value . Contain garbage value after creation .
 	As soon as a constructor is defined by the programmer , the compiler will no longer use this default constructor . There will be no existence of this default constructor . After this if we don't define a constructor with no parameter , we can't create an object with no argument . As compiler has forgot the default construtor .
@@ -43,7 +43,7 @@ public:
 
 	/* 
 	If we just define Animal(int height, int width); without defining Animal() , then "Animal a(10,20);"is valid , but "Animal a;" is invalid . For this we also need to define Animal() .
-	But if we don't define any constructor , then "Animal a(10,20);" is invalid , but "Animal a;" is valid .
+	But if we don't define any constructor (including copy constructor) , then "Animal a(10,20);" is invalid , but "Animal a;" is valid .
 	*/
 
 };

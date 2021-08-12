@@ -1,0 +1,1 @@
+// In programming, implicit is often used to refer to something that's done for you by other code behind the scenes. Explicit is the manual approach to accomplishing the change you wish to have by writing out the instructions to be done explicitly.
