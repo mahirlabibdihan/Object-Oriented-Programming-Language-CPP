@@ -1,65 +1,92 @@
+// Keywords are predefined, reserved words used in programming that have special meanings to the compiler. Keywords are part of the syntax and they cannot be used as an identifier. 
+// There is no prerequisite to use keywords. We can use keywords in program whenever we want.
+
 // C  +  CPP
-auto	
-break
-case	
-char
-const	
-continue	
-default	
-do
-double	
-else	
-enum	
-extern
-float	
-for	
-goto	
-if
-int	
-long	
-register	
-return
-short	
-signed	
-sizeof	
-static
-struct	
-switch	
-typedef	
-union
-unsigned	
-void	
-volatile	
-while
+Data Type:
+	double 
+	char
+	int 
+	float
+	long    
+	short   
+	signed 
+	unsigned    
+	void
+
+Operator:
+	sizeof
+
+Storage Class:
+	auto
+	register
+	extern
+	static
+
+Loop related:
+	do
+	break
+	continue
+	for
+	while
+
+Conditional Statement Related:
+	if
+	else
+	case	
+	default 
+	switch
+
+Identifiers:
+	enum
+	union
+	struct
+	const
+
+Others:	
+	goto	
+	return
+	typedef	
+	volatile	
 
 //CPP
-asm
-dynamic_cast
-namespace
-reinterpret_cast
-bool
-explicit
-new
-static_cast
-false
-catch
-operator
-template
-friend
-private
-class
-this
-inline
-public
-throw
-const_cast
-delete
-mutable
-protected
-true
-try
-typeid
-typename
-using
-virtual
-wchar_t
+Casting:
+	dynamic_cast
+	reinterpret_cast
+	static_cast
+	const_cast
+
+Access Specifier:
+	private
+	protected
+	public
+
+Data type:
+	bool
+
+Operator:
+	new
+	delete
+
+Exception Handling:
+	try
+	catch
+
+Others:
+	asm
+	namespace
+	explicit
+	false
+	operator
+	template
+	friend
+	class
+	this
+	inline
+	throw
+	mutable
+	true
+	typeid
+	typename
+	using
+	virtual
+	wchar_t

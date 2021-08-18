@@ -58,6 +58,7 @@ int main()
 	// When a variable is declared as a reference, it becomes an alternative name for an existing variable.
 	int x=10;
 	int& ref=x;    // Reference must be initialized when declared .// Not applicable for class member
+
 			       // No new memory is allocated for reference
 	const int& ref2=10;
 
