@@ -8,6 +8,7 @@ private:
 	int height;
 	int weight;
 	// Constructor can't be declared private / protected . As objects can't access this while instantiation .
+	// If we don't want to create an object of a class we can make the constructor private or protected.
 public:
 	// Public function member
 	// Same name as class
@@ -76,7 +77,7 @@ int main()
 	// We don't need to use () for declaring object without any argument . If we use , then no object will be created .
 	Animal c(); 
 	// No object is created here . Because compiler thinks it as a function declaration with name c and return type Animal .
-	Animal c = Animal(); // But this will work .
+	Animal d = Animal(); // But this will work .
 
 	b=new Animal();	  // Object is created
 }

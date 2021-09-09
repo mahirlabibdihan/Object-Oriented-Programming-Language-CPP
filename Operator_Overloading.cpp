@@ -21,11 +21,19 @@
 // The number of operands on which the operator would be applicable cannot be changed too
 
 // Operator functions cannot have default arguments
-
+// But only new and function call() operator can have default argument
 // return-type operator # (arg-list)
 // {
 
 // }
+
+
+// Operator overloading can only be done for class or enumerated type.
+// Not for primitive data type
+// Invalid
+/*int operator+(int a,int b){
+
+}*/
 #include <iostream>
 using namespace std;
 
@@ -66,6 +74,7 @@ public:
 		return B;
 	}
 
+	// Prefix
 	Point operator++()
 	{
 		this->x++;
@@ -73,6 +82,7 @@ public:
 		return *this;
 	}
 
+	// Postfix
 	Point operator++(int unused)
 	{
 		Point temp = *this;
@@ -105,6 +115,11 @@ public:
 
 	}
 
+	void* operator new(size_t size,int n=0)	// Can have default argument
+	{
+
+	}
+
 	void* operator new[](size_t size)
 	{
 
@@ -130,6 +145,9 @@ public:
 		
 	}
 
+	void operator()(){
+		
+	}
 	// Operator overloading using friend function
 	// As a friend function does not have a this pointer –
 	// For binary operators, both operands must be passed explicitly
@@ -203,7 +221,6 @@ int main()
 
 	A = A + B;
 
-	A.Print();
 
 	/*
 	array ob;

@@ -28,22 +28,22 @@ class Point{
 	}
 
 	// Invalid
-	static Point& operator=(Point& A,Point& B)
+	/*static Point& operator=(Point& A, Point& B)
 	{
 		A.x = B.x;
 		A.y = B.y;
 		return A ;
-	}
+	}*/
 
 	// Invalid
-	friend Point& operator=(Point& A,Point& B);
+	// friend Point& operator=(Point& A,Point& B);
 };
 
 // Invalid
-Point& operator=(Point& p,Point B)
+/*Point& operator=(Point& p, Point B)
 {
 
-}
+}*/
 
 int main()
 {

@@ -7,26 +7,29 @@ Encapsulations is used for better data management. It increases data security. I
 */
 
 // Encapsulation
-class Animal{
+
+#include <string>
+using namespace std;
+class Animal1 {
 public:
 	string name;
-	void setName(string name){
-		this->name=name;
+	void setName(string name) {
+		this->name = name;
 	}
-	string getName(){
+	string getName() {
 		return name;
 	}
-}
+};
 
 // Encapsulation with data abstraction
-class Animal{
+class Animal2 {
 private:
 	string name;
 public:
-	void setName(string name){
-		this->name=name;
+	void setName(string name) {
+		this->name = name;
 	}
-	string getName(){
+	string getName() {
 		return name;
 	}
-}
+};

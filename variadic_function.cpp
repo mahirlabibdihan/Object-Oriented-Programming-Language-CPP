@@ -1,6 +1,7 @@
 // C++ program to demonstrate working of 
 // Variadic function Template 
-#include <bits/stdc++.h> 
+#include <iostream> 
+#include <cstdarg>
 using namespace std; 
   
 // To handle base case of below recursive 

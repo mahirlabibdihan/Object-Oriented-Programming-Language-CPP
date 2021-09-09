@@ -95,16 +95,16 @@ int main(){
 
 	// pos_type tellp() -> Returns current position of put pointer
 
-	cout<<in.tellp()<<endl;
+	cout<<in.tellg()<<endl;
 
 	in.seekg(2,ios::beg);	// 2 bytes left from the beginning
-	cout<<in.tellp()<<endl;
+	cout<<in.tellg()<<endl;
 
 	in.seekg(3,ios::cur);	// 3 bytes left from current position
-	cout<<in.tellp()<<endl;
+	cout<<in.tellg()<<endl;
 	
 	in.seekg(-4,ios::end);	// 4 bytes right from the end
-	cout<<in.tellp()<<endl;
+	cout<<in.tellg()<<endl;
 
 	out.close();
 

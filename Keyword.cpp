@@ -2,7 +2,7 @@
 // There is no prerequisite to use keywords. We can use keywords in program whenever we want.
 
 // C  +  CPP
-Data Type:
+/* Data Type :
 	double 
 	char
 	int 
@@ -90,3 +90,4 @@ Others:
 	using
 	virtual
 	wchar_t
+*/

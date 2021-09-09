@@ -27,6 +27,7 @@ public:
 */
 
 #include <iostream>
+#include <fstream>
 using namespace std;
 
 
@@ -41,11 +42,11 @@ void checkStatus1(ifstream &in) {
 	ios::iostate s;
 	s = in.rdstate();
 	if (s & ios::eofbit)
-		cout << “EOF encountered” << endl;
+		cout << "EOF encountered" << endl;
 	else if (s & ios::failbit)
-		cout << “Non - Fatal I / O error encountered” << endl;
+		cout << "Non - Fatal I / O error encountered" << endl;
 	else if (s & ios::badbit)
-		cout << “Fatal I / O error encountered” << endl;
+		cout << "Fatal I / O error encountered" << endl;
 }
 
 //2
@@ -59,11 +60,11 @@ void checkStatus1(ifstream &in) {
 
 void checkStatus2(ifstream &in) {
 	if (in.eof())
-		cout << “EOF encountered” << endl;
+		cout << "EOF encountered" << endl;
 	else if (in.fail())
-		cout << “Non - Fatal I / O error encountered” << endl;
+		cout << "Non - Fatal I / O error encountered" << endl;
 	else if (in.bad())
-		cout << “Fatal I / O error encountered” << endl;
+		cout << "Fatal I / O error encountered" << endl;
 }
 
 

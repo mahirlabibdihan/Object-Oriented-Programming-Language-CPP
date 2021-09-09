@@ -25,11 +25,12 @@ using namespace std;
 
 class Animal {
 public:
+
 	virtual void Details()
 	{
 		cout<<"Base"<<endl;
 	}
-	virtual ~Animal() {
+	virtual ~Animal() {		// Without virtual, destructor of derived class won't be called while using delete
 		cout<<"Destructing Base"<<endl;
 	}
 };
@@ -46,6 +47,7 @@ public:
 };
 
 
+// Without virtual keyword i will create ambiguity
 class Base{
 public:
 	int i;
@@ -66,12 +68,12 @@ class D3:public D1,public D2{
 // Run time polymorphism
 // Late binding
 void runtimePolymorphism(){
-	Dog Tom;
+	// Dog Tom;
+	Animal* A=new Dog;		
 
-	Animal* A=&Tom;		
-
-	Tom.Details();
+	// Tom.Details();
 	A->Details();
+	delete A;
 }
 
 // Virtual base class 

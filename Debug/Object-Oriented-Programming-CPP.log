@@ -1,0 +1,209 @@
+﻿  Abstraction.cpp
+  Abstraction_vs_Encapsulation.cpp
+  Abstract_Class.cpp
+  Access_Specifier.cpp
+  Access_Specifier_in_Inheritence.cpp
+  Assign_Object.cpp
+  Big_Decimal.cpp
+D:\Github\Object-Oriented-Programming-CPP\Big_Decimal.cpp(339,1): warning C4554: '&': check operator precedence for possible error; use parentheses to clarify precedence
+D:\Github\Object-Oriented-Programming-CPP\Big_Decimal.cpp(349,1): warning C4554: '&': check operator precedence for possible error; use parentheses to clarify precedence
+D:\Github\Object-Oriented-Programming-CPP\Big_Decimal.cpp(388,1): warning C4554: '&': check operator precedence for possible error; use parentheses to clarify precedence
+D:\Github\Object-Oriented-Programming-CPP\Big_Decimal.cpp(398,1): warning C4554: '&': check operator precedence for possible error; use parentheses to clarify precedence
+D:\Github\Object-Oriented-Programming-CPP\Big_Decimal.cpp(623,21): warning C4018: '<': signed/unsigned mismatch
+D:\Github\Object-Oriented-Programming-CPP\Big_Decimal.cpp(628,14): warning C4018: '<': signed/unsigned mismatch
+  Binary_File_Handling.cpp
+  Binding.cpp
+  Bool.cpp
+  Class.cpp
+  Class_Declaration_vs_Definition.cpp
+  Class_Pointer.cpp
+  Constructor.cpp
+D:\Github\Object-Oriented-Programming-CPP\Constructor.cpp(77,9): warning C4930: 'Animal c(void)': prototyped function not called (was a variable definition intended?)
+  Constructor_Destructor.cpp
+  Constructor_Destructor_Inheritence.cpp
+  Container.cpp
+  Copy_Constructor.cpp
+  Copy_Constructor_vs_Assignment.cpp
+  Default_Argumet.cpp
+  Generating Code...
+  Compiling...
+  Destructor.cpp
+  Dynamic_Allocation.cpp
+  Early_vs_Late_Binding.cpp
+  Encapsulation.cpp
+  endl_vs_n.cpp
+  Enum.cpp
+  eof.cpp
+  eof_in_File_Handling.cpp
+  error_File_Handling.cpp
+  Exception_Handling.cpp
+  Explicit_vs_Implicit.cpp
+  File_Handling.cpp
+  Forward_Declaration.cpp
+  friend.cpp
+  fstream.cpp
+  Function_Overloading.cpp
+  Function_Overloading_vs_Overriding.cpp
+  Function_Overriding.cpp
+  getline.cpp
+  Global_vs_Local.cpp
+  Generating Code...
+  Compiling...
+  Header_File.cpp
+  Inheritence.cpp
+  Inline_Function.cpp
+  Inserter_&_Extractor.cpp
+  Inside_vs_Outside_Class_Definition.cpp
+D:\Github\Object-Oriented-Programming-CPP\Inside_vs_Outside_Class_Definition.cpp(56,5): warning C4101: 'c': unreferenced local variable
+  Interface.cpp
+  io.cpp
+  ios.cpp
+  iostate.cpp
+  iostream.cpp
+  IO_Status.cpp
+  Iterator.cpp
+  Keyword.cpp
+  Lambda_Function.cpp
+  Learn_OOP.cpp
+  Line_Input.cpp
+  manipulators.cpp
+  Multithread.cpp
+  Namespace.cpp
+  Nested_Class.cpp
+  Generating Code...
+  Compiling...
+  Normal_vs_Inline_Function.cpp
+  Object.cpp
+  Object_Array.cpp
+  Object_Pointer.cpp
+  Object_to_Function.cpp
+  OOP.cpp
+  openmode.cpp
+  Operator.cpp
+  Operator_Overloading.cpp
+  Overriding_vs_Overloading.cpp
+  Pointer_to_Member_Function.cpp
+  Polymorphism.cpp
+  Presentation.cpp
+  Pure_Virtual_Function.cpp
+  Random_Access.cpp
+  Reference.cpp
+D:\Github\Object-Oriented-Programming-CPP\Reference.cpp(67,6): warning C4101: 'y': unreferenced local variable
+  Scope_Operator.cpp
+  stack.cpp
+  stack4.cpp
+  Static_Class_Members.cpp
+  Generating Code...
+  Compiling...
+  STL.cpp
+  Stream.cpp
+  String.cpp
+D:\Github\Object-Oriented-Programming-CPP\String.cpp(14,3): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\Github\Object-Oriented-Programming-CPP\String.cpp(20,3): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\Github\Object-Oriented-Programming-CPP\String.cpp(26,3): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\Github\Object-Oriented-Programming-CPP\String.cpp(38,3): warning C4996: 'scanf': This function or variable may be unsafe. Consider using scanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\Github\Object-Oriented-Programming-CPP\String.cpp(48,3): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\Github\Object-Oriented-Programming-CPP\String.cpp(55,3): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\Github\Object-Oriented-Programming-CPP\String.cpp(65,3): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\Github\Object-Oriented-Programming-CPP\String.cpp(119,3): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\Github\Object-Oriented-Programming-CPP\String.cpp(125,3): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\Github\Object-Oriented-Programming-CPP\String.cpp(131,3): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\Github\Object-Oriented-Programming-CPP\String.cpp(141,3): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\Github\Object-Oriented-Programming-CPP\String.cpp(142,3): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\Github\Object-Oriented-Programming-CPP\String.cpp(176,3): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\Github\Object-Oriented-Programming-CPP\String.cpp(184,3): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\Github\Object-Oriented-Programming-CPP\String.cpp(185,3): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\Github\Object-Oriented-Programming-CPP\String.cpp(196,8): warning C4477: 'scanf' : format string '%s' requires an argument of type 'char *', but variadic argument 1 has type 'String'
+D:\Github\Object-Oriented-Programming-CPP\String.cpp(196,2): warning C4996: 'scanf': This function or variable may be unsafe. Consider using scanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\Github\Object-Oriented-Programming-CPP\String.cpp(201,9): warning C4477: 'printf' : format string '%s' requires an argument of type 'char *', but variadic argument 1 has type 'String'
+D:\Github\Object-Oriented-Programming-CPP\String.cpp(220,2): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\Github\Object-Oriented-Programming-CPP\String.cpp(221,2): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  StringToDecimal.cpp
+  String_Stream.cpp
+  t1.cpp
+  t2.cpp
+  temp.cpp
+  temp2.cpp
+  Template.cpp
+  test.cpp
+  Text_vs_Binary_mode.cpp
+  this.cpp
+  Type_Casting.cpp
+  Unnamed_Namespace_vs_Global_Scope.cpp
+  Using.cpp
+  variadic_function.cpp
+  vector.cpp
+D:\Github\Object-Oriented-Programming-CPP\vector.cpp(161,9): warning C4101: 'z': unreferenced local variable
+  Virtual.cpp
+  Generating Code...
+  Random_Access.c
+Access_Specifier_in_Inheritence.obj : error LNK2005: _main already defined in Abstract_Class.obj
+Assign_Object.obj : error LNK2005: _main already defined in Abstract_Class.obj
+Big_Decimal.obj : error LNK2005: _main already defined in Abstract_Class.obj
+Binary_File_Handling.obj : error LNK2005: _main already defined in Abstract_Class.obj
+Class.obj : error LNK2005: _main already defined in Abstract_Class.obj
+Class_Declaration_vs_Definition.obj : error LNK2005: _main already defined in Abstract_Class.obj
+Class_Pointer.obj : error LNK2005: _main already defined in Abstract_Class.obj
+Constructor.obj : error LNK2005: _main already defined in Abstract_Class.obj
+Constructor_Destructor.obj : error LNK2005: _main already defined in Abstract_Class.obj
+Constructor_Destructor_Inheritence.obj : error LNK2005: _main already defined in Abstract_Class.obj
+Copy_Constructor.obj : error LNK2005: _main already defined in Abstract_Class.obj
+Default_Argumet.obj : error LNK2005: _main already defined in Abstract_Class.obj
+Destructor.obj : error LNK2005: _main already defined in Abstract_Class.obj
+Dynamic_Allocation.obj : error LNK2005: _main already defined in Abstract_Class.obj
+Enum.obj : error LNK2005: _main already defined in Abstract_Class.obj
+Exception_Handling.obj : error LNK2005: _main already defined in Abstract_Class.obj
+File_Handling.obj : error LNK2005: _main already defined in Abstract_Class.obj
+Forward_Declaration.obj : error LNK2005: _main already defined in Abstract_Class.obj
+Function_Overloading.obj : error LNK2005: _main already defined in Abstract_Class.obj
+Function_Overriding.obj : error LNK2005: _main already defined in Abstract_Class.obj
+Global_vs_Local.obj : error LNK2005: _main already defined in Abstract_Class.obj
+Inheritence.obj : error LNK2005: _main already defined in Abstract_Class.obj
+Inline_Function.obj : error LNK2005: _main already defined in Abstract_Class.obj
+Inside_vs_Outside_Class_Definition.obj : error LNK2005: _main already defined in Abstract_Class.obj
+ios.obj : error LNK2005: _main already defined in Abstract_Class.obj
+iostate.obj : error LNK2005: _main already defined in Abstract_Class.obj
+iostream.obj : error LNK2005: _main already defined in Abstract_Class.obj
+IO_Status.obj : error LNK2005: "void __cdecl checkStatus1(class std::basic_ifstream<char,struct std::char_traits<char> > &)" (?checkStatus1@@YAXAAV?$basic_ifstream@DU?$char_traits@D@std@@@std@@@Z) already defined in iostate.obj
+IO_Status.obj : error LNK2005: "void __cdecl checkStatus2(class std::basic_ifstream<char,struct std::char_traits<char> > &)" (?checkStatus2@@YAXAAV?$basic_ifstream@DU?$char_traits@D@std@@@std@@@Z) already defined in iostate.obj
+IO_Status.obj : error LNK2005: _main already defined in Abstract_Class.obj
+Lambda_Function.obj : error LNK2005: _main already defined in Abstract_Class.obj
+Learn_OOP.obj : error LNK2005: _main already defined in Abstract_Class.obj
+Line_Input.obj : error LNK2005: _main already defined in Abstract_Class.obj
+manipulators.obj : error LNK2005: _main already defined in Abstract_Class.obj
+Multithread.obj : error LNK2005: _main already defined in Abstract_Class.obj
+Namespace.obj : error LNK2005: _main already defined in Abstract_Class.obj
+Object_Array.obj : error LNK2005: _main already defined in Abstract_Class.obj
+Object_Pointer.obj : error LNK2005: _main already defined in Abstract_Class.obj
+Object_to_Function.obj : error LNK2005: _main already defined in Abstract_Class.obj
+OOP.obj : error LNK2005: _main already defined in Abstract_Class.obj
+openmode.obj : error LNK2005: _main already defined in Abstract_Class.obj
+Operator_Overloading.obj : error LNK2005: _main already defined in Abstract_Class.obj
+Pointer_to_Member_Function.obj : error LNK2005: _main already defined in Abstract_Class.obj
+Polymorphism.obj : error LNK2005: _main already defined in Abstract_Class.obj
+Presentation.obj : error LNK2005: _main already defined in Abstract_Class.obj
+Pure_Virtual_Function.obj : error LNK2005: _main already defined in Abstract_Class.obj
+Debug\Random_Access.obj : warning LNK4042: object specified more than once; extras ignored
+Reference.obj : error LNK2005: _main already defined in Abstract_Class.obj
+stack.obj : error LNK2005: _main already defined in Abstract_Class.obj
+stack4.obj : error LNK2005: _main already defined in Abstract_Class.obj
+Static_Class_Members.obj : error LNK2005: _main already defined in Abstract_Class.obj
+String.obj : error LNK2005: _main already defined in Abstract_Class.obj
+StringToDecimal.obj : error LNK2005: _main already defined in Abstract_Class.obj
+String_Stream.obj : error LNK2005: _main already defined in Abstract_Class.obj
+t1.obj : error LNK2005: _main already defined in Abstract_Class.obj
+temp.obj : error LNK2005: _main already defined in Abstract_Class.obj
+temp2.obj : error LNK2005: _main already defined in Abstract_Class.obj
+Template.obj : error LNK2005: _main already defined in Abstract_Class.obj
+test.obj : error LNK2005: _main already defined in Abstract_Class.obj
+this.obj : error LNK2005: _main already defined in Abstract_Class.obj
+Unnamed_Namespace_vs_Global_Scope.obj : error LNK2005: _main already defined in Abstract_Class.obj
+Using.obj : error LNK2005: _main already defined in Abstract_Class.obj
+variadic_function.obj : error LNK2005: _main already defined in Abstract_Class.obj
+vector.obj : error LNK2005: _main already defined in Abstract_Class.obj
+Virtual.obj : error LNK2005: _main already defined in Abstract_Class.obj
+temp2.obj : error LNK2019: unresolved external symbol "void __cdecl f2(void)" (?f2@@YAXXZ) referenced in function _main
+    Hint on symbols that are defined and could potentially match:
+      "class Animal __cdecl f2(void)" (?f2@@YA?AVAnimal@@XZ)
+MSVCRTD.lib(exe_winmain.obj) : error LNK2019: unresolved external symbol _WinMain@16 referenced in function "int __cdecl invoke_main(void)" (?invoke_main@@YAHXZ)
+D:\Github\Object-Oriented-Programming-CPP\Debug\Object-Oriented-Programming-CPP.exe : fatal error LNK1120: 2 unresolved externals

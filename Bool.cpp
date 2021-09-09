@@ -1,2 +1,2 @@
-true -> Non zero value
-false -> Zero
+// true -> Non zero value
+// false -> Zero

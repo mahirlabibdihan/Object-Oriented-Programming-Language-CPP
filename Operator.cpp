@@ -16,7 +16,7 @@
 
 // Colon -> :   // Bit field
 
-Arithmetic Operators :
+/*Arithmetic Operators :
 	Addition : +
 	Subtraction : -
 	Multiplication : *
@@ -48,7 +48,8 @@ sizeof
 &  => Address operator
 ?: => Ternary Operator
 -> 
+() => Function call operator
 :: => Scope Resolation operator
 new,delete => Memory Management
 << => Insertion Operator
->> => Extraction Operator
+>> => Extraction Operator*/

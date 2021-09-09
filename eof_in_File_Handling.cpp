@@ -5,20 +5,22 @@
 
 // We can read a whole file character by character.
 
-while(true)
+/*while (true)
 {
 	char ch;
 	in>>ch;
 	// in.get(ch);		// binary mode
 	if(in.eof()) break;
 	cout<<ch<<endl;
-}	
+}*/	
 
 
 // We can read a whole file line by line.
-While(true){
+/*
+While(true) {
 	string str;
 	getline(in, Word);
 	cout<<str;
 	if(in.eof()) break;
 }
+*/

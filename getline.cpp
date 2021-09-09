@@ -24,17 +24,20 @@ That's why, while taking input from a file using getline in a loop, getline will
 
 // So we usually read in this way
 
-while (!in.eof()){
+/*
+while (!in.eof()) {
 	string str;
 	getline(in, Word);
 	cout<<str;
 }
-
+*/
 // Or
 
-While(true){
+/*
+While(true) {
 	string str;
 	getline(in, Word);
 	cout<<str;
 	if(in.eof()) break;
 }
+*/

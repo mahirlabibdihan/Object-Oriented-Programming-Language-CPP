@@ -1,6 +1,11 @@
 #include<iostream>
 using namespace std;
 // Abstract Class : Class containing atleast one pure virtual function .
+
+// Can't instantiate abstract class. We cannot create any objects of such classes.
+// We can still create a pointer to an abstract class
+
+// While inheriting from abstract class, pure virtual functions of that class must be overriden and defined. Otherwise they become abstract too.
 class Animal{
 public:
 	virtual void f()=0;
@@ -21,36 +26,4 @@ int main()
 
 	Tom.f();
 	A->f();
-}
-
-
-class Vehicle{
-public:
-	virtual void start()=0;
-};
-
-// We have created a Vehicle(Abstract Class) which have start method.
-// But we have not defined the start method. 
-// In other words, we have hidden the details ,about how the start method works, from user.
-// And this is abstraction.
-
-class Car:public Vehicle{
-public:
-	void start(){
-		cout<<"Starting with key"<<endl;
-	}
-};
-
-class Bike:public Vehicle{
-public:
-	void start(){
-		cout<<"Starting with kick"<<endl;
-	}
-};
-
-
-int main()
-{
-	Vehicle* v=new Car();
-	v->start();
 }

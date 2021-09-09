@@ -150,7 +150,7 @@ int main()
 	So we can just return reference of global objects.
 
 	2. When an object is passed by value to a function. 
-	We can easily pass objects by reference to a 
+	We can easily pass objects by reference to a function. 
 
 	3. When an object is constructed based on another object of the same class.
 	We can't replace this with reference. 

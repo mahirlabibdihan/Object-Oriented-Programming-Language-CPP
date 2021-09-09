@@ -9,7 +9,9 @@ Objects are designed to share behaviors and they can take on more than one form.
 
 // Run time polymorphism
 // Virtual function 	( Different form of same method for different class )	
-// + Operator Overriding
+// Operator Overriding
+
+// Pointer to an abstract class is the heart of run time polymorphism
 #include<iostream>
 using namespace std;
 class Vehicle{

@@ -54,5 +54,4 @@ inline void C3::f3()
 int main()
 {
 	C3 c;
-	c.f();
 }

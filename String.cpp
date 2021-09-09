@@ -2,7 +2,7 @@
 #include<cstring>
 #include<string>
 using namespace std;
-class String // :public string 
+class String // :public string
 {
 	char *s;
 	int currentLength;
@@ -21,9 +21,9 @@ public:
 	}
 	String(const String &str)
 	{
-		currentLength=str.currentLength;
+		currentLength = str.currentLength;
 		s = new char[currentLength];
-		strcpy(s,str.s);
+		strcpy(s, str.s);
 	}
 	~String()
 	{
@@ -31,7 +31,7 @@ public:
 	}
 	int length()
 	{
-		return currentLength-1;
+		return currentLength - 1;
 	}
 	void in()
 	{
@@ -61,8 +61,8 @@ public:
 	void push_front(char c)
 	{
 		char* temp = new char[++currentLength];
-		temp[0] = c;temp[1]='\0';
-		strcat(temp,s);
+		temp[0] = c; temp[1] = '\0';
+		strcat(temp, s);
 		delete[] s;
 		s = temp;
 	}
@@ -74,7 +74,7 @@ public:
 		else
 		{
 			currentLength--;
-			s[currentLength-1]='\0';
+			s[currentLength - 1] = '\0';
 		}
 	}
 	void pop_front()
@@ -89,7 +89,7 @@ public:
 			{
 				s[i] = s[i + 1];
 			}
-			s[currentLength-1]='\0';
+			s[currentLength - 1] = '\0';
 		}
 	}
 	char back()
@@ -120,9 +120,9 @@ public:
 	}
 	void operator=(String str)
 	{
-		currentLength=str.currentLength;
+		currentLength = str.currentLength;
 		s = new char[currentLength];
-		strcpy(s,str.s);
+		strcpy(s, str.s);
 	}
 
 	void operator+=(char c)
@@ -136,10 +136,10 @@ public:
 	}
 	void operator+=(const char* str)
 	{
-		currentLength+=strlen(str);
+		currentLength += strlen(str);
 		char* temp = new char[currentLength];
 		strcpy(temp, s);
-		strcat(temp,str);
+		strcat(temp, str);
 		delete[] s;
 		s = temp;
 	}
@@ -155,9 +155,9 @@ public:
 			{
 				s[i] = s[i + 1];
 			}
-			s[currentLength-1]='\0';
+			s[currentLength - 1] = '\0';
 		}
-		
+
 	}
 	void operator--(int)
 	{
@@ -167,7 +167,7 @@ public:
 		else
 		{
 			currentLength--;
-			s[currentLength-1]='\0';
+			s[currentLength - 1] = '\0';
 		}
 	}
 	String operator+(char c)
@@ -187,38 +187,38 @@ public:
 	}
 	friend String operator+(char c, String str);
 	friend String operator+(const char* c, String str);
-	friend istream& operator>>(istream& in,String str);
-	friend ostream& operator<<(ostream& out,String str);
+	friend istream& operator>>(istream& in, String str);
+	friend ostream& operator<<(ostream& out, String str);
 };
 
-istream& operator>>(istream& in,String str)
+istream& operator>>(istream& in, String str)
 {
-	scanf("%s",str);
+	scanf("%s", str);
 	return in;
 }
-ostream& operator<<(ostream& out,String str)
+ostream& operator<<(ostream& out, String str)
 {
-	printf("%s\n",str);
+	printf("%s\n", str);
 	return out;
 }
 
 String operator+(char c, String str)
 {
-	cout<<c<<" "<<str.s<<endl;
+	cout << c << " " << str.s << endl;
 	char* temp = new char[str.currentLength + 1];
 	for (int i = 0; i < str.currentLength; i++)
 	{
 		temp[i + 1] = str.s[i];
 	}
 	temp[0] = c;
-	cout<<temp<<endl;
+	cout << temp << endl;
 	return temp;
 }
 String operator+(const char* str1, String str2)
 {
 	char* temp = new char[str2.currentLength + strlen(str1)];
-	strcpy(temp,str1);
-	strcat(temp,str2.s);
+	strcpy(temp, str1);
+	strcat(temp, str2.s);
 	return temp;
 }
 int main()
@@ -233,18 +233,22 @@ int main()
 	s.out();
 	s.pop_front();
 	s.out();
-	s+='c';
+	s += 'c';
 	s.out();
-	s+="Ohi";
+	s += "Ohi";
 	s.out();
-	s=s+'h';
+	s = s + 'h';
 	s.out();
-	s='c'+s;
+	s = 'c' + s;
 	s.out();
-	s="Amrin"+s;
+	s = "Amrin" + s;
 	s.out();
 	s--;
 	--s;
-	s+="Ohi";
+	s += "Ohi";
 	s.out();
+
+	string str1;
+	string str2("Dihan");
+	string str3(str2);
 }
