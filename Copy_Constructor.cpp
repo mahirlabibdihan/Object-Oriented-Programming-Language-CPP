@@ -22,7 +22,13 @@ M A H I R     L A B I B     D I H A N
 // If we don’t define our own copy constructor, the C++ compiler creates a default copy constructor for each class which does a bit-wise copy between objects. 
 
 // The default copy constructor does only shallow copy. 
-// Deep copy is possible only with user defined copy constructor. 
+// Deep copy is possible only with user defined copy constructor.
+
+// If the class has pointer variables and dynamic memory allocations then bitwise copy is not enough
+// Default copy constructor will create problem, If your class contains pointer members, which are dynamically allocated.
+// When an object with pointer member is copied to another object with default copy constructor, then both object's member will point to the same location.
+// So, when destructor of an object is called it will creates problem
+
 /*
 Why argument to a copy constructor must be passed as a reference? 
 - A copy constructor is called when an object is passed by value. Copy constructor itself is a function. So if we pass an argument by value in a copy constructor, a call to copy constructor would be made to call copy constructor which becomes a non-terminating chain of calls. Therefore compiler doesn’t allow parameters to be passed by value.

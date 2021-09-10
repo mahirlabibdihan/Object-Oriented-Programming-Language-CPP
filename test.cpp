@@ -1,25 +1,28 @@
 #include <iostream>
 using namespace std;
-class Animal{
+class A{
 public:
-	Animal(){
-		cout<<"Base constructor"<<endl;
+	A(){
+		cout<<"A created"<<endl;
 	}
-	~Animal(){
-		cout<<"Base destructor"<<endl;
+	~A(){
+		cout<<"A destroyed"<<endl;
 	}
 };
-
-class Dog:public Animal{
+class B{
 public:
-	Dog(int x){
-		cout<<"Derive constructor"<<endl;
+	static A *a;
+	B(){
+		
 	}
-	~Dog(){
-		cout<<"Derive destructor"<<endl;
+	~B(){
+		
 	}
 };
+A *B::a=new A();
 
 int main(){
-	Dog d(1);
+
+
+	delete B::a;
 }

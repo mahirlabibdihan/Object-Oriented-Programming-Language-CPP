@@ -14,6 +14,7 @@ public:
 	Animal()
 	{
 		Height=0;
+		// this->Height=0;
 		Weight=0;
 	}
 	
@@ -24,6 +25,8 @@ public:
 		this->Height = Height;	
 		// (*this).Height = Height;	
 		this->Weight = Weight;
+
+		Height = Height; // Only copies the local 'Height' to itslef
 	}
 
 };

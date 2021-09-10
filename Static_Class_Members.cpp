@@ -35,6 +35,29 @@ public:
 // To ensure that the storage for a static member is allocated it has to be defined second time outside the class using the class-name and scope operator
 int Animal::Count=0;
 
+
+class A{
+public:
+	A(){
+		cout<<"A created"<<endl;
+	}
+	~A(){
+		cout<<"A destroyed"<<endl;
+	}
+};
+class B{
+public:
+	static A *a;
+	B(){
+		
+	}
+	~B(){
+		
+	}
+};
+A *B::a=new A();
+
+
 int main()
 {
 	Animal Tom;
@@ -43,4 +66,7 @@ int main()
 
 	cout<<Jerry.GetCount()<<endl;
 	cout<<Animal::GetCount()<<endl;
+
+	delete B::a;
 }
+
