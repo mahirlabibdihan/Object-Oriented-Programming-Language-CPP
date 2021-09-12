@@ -92,6 +92,10 @@ int main()
 	int& lref=a;
 	int& Lref=rref;
 
+	// Can assign r-value reference to l-value reference
+	// But can't assign r-value to l-value reference
+
+	// Can't assign l-value and l-value reference to r-value reference
 
 	Reference()=a;
 }

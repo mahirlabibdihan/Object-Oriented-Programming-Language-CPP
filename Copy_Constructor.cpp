@@ -121,7 +121,7 @@ Animal* larger(Animal *a,Animal *b)
 }
 int main()
 {
-	Animal dog;
+	Animal dog = Animal();
 
 	Animal cat(dog);
 	*dog.height=10;

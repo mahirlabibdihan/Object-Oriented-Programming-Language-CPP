@@ -62,6 +62,7 @@ public:
 	*/
 	derived(int a):base(a)
 	{
+		// base(a); // If we write like this, it will just create a new base class instance. 
 		cout<<"Derived parameterized constructor"<<endl;
 	}
 	~derived(){
