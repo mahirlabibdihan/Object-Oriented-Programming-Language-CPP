@@ -1,0 +1,1 @@
+// Abstract class with all pure virtual function ( No nethod implementation )

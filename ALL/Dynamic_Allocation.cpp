@@ -20,8 +20,9 @@ int main()
 {
 	// type *var = new type;
 	// new returns a pointer to dynamically allocated memory that is sufficient to hold a data of type .
-	int *a=new int;
-	int *b=new int(10);
+	int *a=new int;	 // Garbage value
+	int *b=new int();  // Initilizes to 0
+	int *c=new int(10);
 	// 	In case of insufficient memory, new can report failure in two ways
 	// By returning a null pointer
 	// By generating an exception
