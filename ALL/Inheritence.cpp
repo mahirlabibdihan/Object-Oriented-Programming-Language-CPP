@@ -12,7 +12,8 @@
 #include <string>
 using namespace std;
 
-class Animal {
+class Animal
+{
 private:
 	int height;
 	int weight;
@@ -38,27 +39,31 @@ protected:
 
 // When deriving a class, default access specifier is private.
 // class Dog: Animal{} is equivalent to class Dog: private Animal{}
-class Dog: public Animal {
+class Dog : public Animal
+{
 private:
 	string name;
+
 public:
-	Dog(string name, int height, int width): Animal(height, width)
+	Dog(string name, int height, int width) : Animal(height, width)
 	{
 		this->name = name;
 	}
-	Dog(): Animal()
+	Dog() : Animal()
 	{
 		this->name = "";
 	}
-	~Dog() 
+	~Dog()
 	{
-		cout<<this->name<<" ";
+		cout << this->name << " ";
 	}
 };
 
-class Color {
+class Color
+{
 private:
 	short R, G, B;
+
 protected:
 	Color()
 	{
@@ -82,62 +87,79 @@ public:
 	}
 };
 
-
 // Multiple Inheritence
-class Mouse: public Animal , public Color {
+class Mouse : public Animal, public Color
+{
 private:
 	string name;
+
 public:
-	Mouse():Animal(),Color()
+	Mouse() : Animal(), Color()
 	{
 		this->name = "";
 	}
-	Mouse(string name, int height, int width):Animal(height, width)
+	Mouse(string name, int height, int width) : Animal(height, width)
 	{
 		this->name = name;
 	}
 
-	Mouse(string name, int height, int width, short R,short G,short B):Animal(height, width),Color(R,G,B)
+	Mouse(string name, int height, int width, short R, short G, short B) : Animal(height, width), Color(R, G, B)
 	{
 		this->name = name;
 	}
 	~Mouse()
 	{
-		cout<<this->name<<" ";
+		cout << this->name << " ";
 	}
 };
 
-
-class base{
+class base
+{
 public:
 	base(int a)
 	{
-
 	}
 };
 
-class derived:public base{
+class derived : public base
+{
 public:
 	// When derived class construtor is called , Base class constructor is also called by default
 	// derived(int a)
 	// {
 
 	// }
-	// It means 
+	// It means
 	// derived(int a):base()		// It will give error if there is no base()
 	// {
-		
-	// }
-	derived(int a):base(a)
-	{
 
+	// }
+	derived(int a) : base(a)
+	{
 	}
 };
 
+template <typename E>
+class A
+{
+protected:
+	void f1() {}
+};
+template <typename E>
+class B : public A<E>
+{
+public:
+	void f2()
+	{
+		// f1(); // Error
+		this->f1();
+		A<E>::f1();
+	}
+};
 int main()
 {
-	Dog Tom("Tom",500,100);
-	Mouse Jerry("Jerry",100,30,100,20,30);
+	Dog Tom("Tom", 500, 100);
+	Mouse Jerry("Jerry", 100, 30, 100, 20, 30);
 
 	Jerry.PrintColor();
 }
